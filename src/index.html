@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+
+    
+    <div class="container__box--image box-desactive">
+      <div class="box--image">
+        <div class="container__iconClose">
+          <svg class="iconClose2" title="close" xmlns="http://www.w3.org/2000/svg"><path title="close" d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+        </div>
+
+        <figure class="main__img2">
+          <div class="main__img-container">
+            <img src="/images/image-product-1.jpg" class="image__product2" image-id="mainImg2">
+
+            <div class="container__arrow2">
+              <div class="container__previous2 arrow__icon">
+                <img src="/images/icon-previous.svg" alt="icon-previous" class="icon__previous2">
+              </div>
+              <div class="container__next2 arrow__icon2">
+                <img src="/images/icon-next.svg" alt="icon-next2" class="icon__next">
+              </div>
+            </div>
+          </div>
+          <div class="img__products2 style__imgProducts">
+
+          </div>
+        </figure>
+      </div>
+    </div>
+    <!-- CONTAINER__HEADER --SECTION1, MENU, SECTION2------------>
+    <header class="container__header">
+      <div class="header__section1">
+        <img src="/images/icon-menu.svg" alt="icon-menu" class="icon__menu">
+        <img src="/images/logo.svg" alt="Logo">
+
+        <!-- MENU -->
+        <div class="container__menu desactive__menu">
+          <div class="menu">
+            <img src="/images/icon-close.svg" alt="icon__colse" class="icon__close">
+            <nav class="menu__items">
+              <a href="#">Collections</a>
+              <a href="#">Men</a>
+              <a href="#">Women</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__section2">
+        <div class="container__icon__cart">
+          <img src="/images/icon-cart.svg" alt="cart" class="icon__cart">
+          <span class="num__product">0</span>
+        </div>
+        <img src="/images/image-avatar.png" alt="avatar" class="header__avatar">
+      </div>
+    </header>
+
+    <!-- CART PRODUCTS -->
+    <section class="container__products hide__card-product">
+      <div class="cart__products">
+        <div class="cart__title">
+          <p>Cart</p>
+        </div>
+        <div class="container__addProduct">
+          <div class="container__listProduct"></div>
+
+          <button class="btn__checkout btn-hide">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTAINER__MAIN -- MAIN__IMG,MAIN__CONTENT ---------- -->
+    <main class="container__main">
+
+      <figure class="main__img">
+        <div>
+          <img src="" class="image__product" image-id="mainImg1" title="HOLA COMO ESTAS">
+
+          <div class="container__arrow">
+            <div class="container__previous arrow__icon">
+              <img src="/images/icon-previous.svg" alt="icon-previous" class="icon__previous">
+            </div>
+            <div class="container__next arrow__icon">
+              <img src="/images/icon-next.svg" alt="icon-next" class="icon__next">
+            </div>
+          </div>
+        </div>
+        <div class="img__products style__imgProducts"> </div>
+      </figure>
+
+      <section class="main__content">
+        <div class="content__details">
+          <span>SNEAKER COMPANY</span>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+            they’ll withstand everything the weather can offer.</p>
+        </div>
+
+        <div class="content__price">
+          <div class="price">
+            <span class="current-price">$125.00</span>
+            <div class="price__descount">
+              <span class="discount-badge">50%</span>
+            </div>
+          </div>
+          <span class="original-price">$250.00</span>
+        </div>
+
+        <div class="btns">
+          <div class="price-section">
+            <img src="/images/icon-minus.svg" alt="icon-minus" class="icon-minus">
+            <span class="quantity"></span>
+            <img src="/images/icon-plus.svg" alt="icon-plus" class="icon-plus">
+          </div>
+
+          <button class="add-to-cart">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="black" fill-rule="nonzero" />
+            </svg>
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
