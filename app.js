@@ -42,10 +42,10 @@ let containerImgProduct = document.querySelector(".img__products");
 let containerImgProduct2 = document.querySelector(".img__products2");
 
 let imageProduct = [
-  "/images/image-product-1.jpg",
-  "/images/image-product-2.jpg",
-  "/images/image-product-3.jpg",
-  "/images/image-product-4.jpg",
+  "./images/image-product-1.jpg",
+  "./images/image-product-2.jpg",
+  "./images/image-product-3.jpg",
+  "./images/image-product-4.jpg",
 ];
 function innerImage(product_, indexs, items) {
   return `<div class="style__selectImg container__img-select containerImg--${items}${indexs}"><img src="${product_}" alt="Productcart" class="img__addProduct-${items} img__addProduct-${items}${indexs}" data-id="${indexs}"></div>`;
