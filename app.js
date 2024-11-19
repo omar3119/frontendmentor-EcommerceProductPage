@@ -104,8 +104,8 @@ function handleImageClick(e) {
     positions = positionIndex;
     n = parseInt($attribu);
     // Actualizar la imagen principal
-    imageMain.src = `/images/image-product-${$attribu}.jpg`;
-    imageMain2.src = `/images/image-product-${$attribu}.jpg`;
+    imageMain.src = `./images/image-product-${$attribu}.jpg`;
+    imageMain2.src = `./images/image-product-${$attribu}.jpg`;
 
     // Aplicar estilos a la imagen seleccionada
     styleBorderImg($attribu);
@@ -196,7 +196,7 @@ function list() {
   } else {
     let listPrododucts = productsAdds.map((product, index) => {
       return `<article class="product__add">
-      <img src="/images/image-product-1-thumbnail.jpg" alt="Productcart" class="img__add--product">
+      <img src="./images/image-product-1-thumbnail.jpg" alt="Productcart" class="img__add--product">
       <div class="price__product--add">
         <p>Fall Limited Edition Sneakers</p>
         <div>
@@ -206,7 +206,7 @@ function list() {
           }.00</span>
         </div>
       </div>
-      <img src="/images/icon-delete.svg" title="Delete" alt="icon delete" class="icon__delete" data-index="${index}">
+      <img src="./images/icon-delete.svg" title="Delete" alt="icon delete" class="icon__delete" data-index="${index}">
     </article>`;
     });
     btnCheckout.classList.remove("btn-hide");
